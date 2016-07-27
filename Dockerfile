@@ -1,7 +1,7 @@
-# docker build -t sbt/life .
-# docker run -a stdin -a stdout -i -t sbt/life /bin/bash
+# docker build -t sbt/docker-sbt .
+# docker run -a stdin -a stdout -i -t sbt/docker-sbt /bin/bash
 # sbt debian:package-bin
-# docker run -v $HOME/.sbt:/root/.sbt -v $HOME/ivy2:/root/.ivy2 -v (pwd):/app sbt/life clean package-bin
+# docker run -v $HOME/.sbt:/root/.sbt -v $HOME/ivy2:/root/.ivy2 -v (pwd):/app sbt/docker-sbt clean package-bin
 
 FROM ubuntu:14.04
 
